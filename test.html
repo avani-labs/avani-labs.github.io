@@ -12,14 +12,16 @@
 <script type="text/javaScript">
 var playerInstance = jwplayer("myElement");
 playerInstance.setup({
+    title: "Fencing",
+    description: "Fencing video with added hit markers in the scrubber bar",
     file: "files/test.mp4",
-    mediaid: "xxxxYYYY",
+    image: "files/test.jpg",
     tracks: [{
       file:"/files/chapters.vtt",
       kind:"chapters"
     }],
-    width: 1280,
-    height: 720
+    width: "90%",
+    aspectratio: "16:9"
 });
 </script>
 </body>
