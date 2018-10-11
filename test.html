@@ -13,7 +13,11 @@
 var playerInstance = jwplayer("myElement");
 playerInstance.setup({
     file: "files/test.mp4",
-    mediaid: "xxxxYYYY"
+    mediaid: "xxxxYYYY",
+    tracks: [{
+      file:"/files/chapters.vtt",
+      kind:"chapters"
+    }]
 });
 </script>
 </body>
